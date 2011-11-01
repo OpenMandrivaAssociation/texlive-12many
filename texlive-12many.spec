@@ -12,6 +12,8 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(post):	texlive-tlpkg
 Conflicts:	texlive-texmf <= 20110705-3
+Conflicts:	texlive-doc <= 20110705-3
+Conflicts:	texlive-source <= 20110705-3
 
 %description
 In the discrete branches of mathematics and the computer
@@ -53,4 +55,4 @@ another a one-line change.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc source tex %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
