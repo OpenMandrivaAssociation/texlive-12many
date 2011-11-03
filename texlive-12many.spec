@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/12many
+# catalog-date 2008-10-03 01:00:01 +0200
+# catalog-license lppl
+# catalog-version 0.3
 Name:		texlive-12many
 Version:	0.3
 Release:	1
@@ -48,6 +54,7 @@ another a one-line change.
 #- source
 %doc %{_texmfdistdir}/source/latex/12many/12many.dtx
 %doc %{_texmfdistdir}/source/latex/12many/12many.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ another a one-line change.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
