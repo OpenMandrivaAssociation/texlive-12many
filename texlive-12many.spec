@@ -54,3 +54,24 @@ another a one-line change.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Sun Feb 12 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3-3
++ Revision: 773385
+- Rebuild
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3-2
++ Revision: 749032
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.3-1
++ Revision: 717775
+- texlive-12many
+- texlive-12many
+- texlive-12many
+- texlive-12many
+- texlive-12many
+- texlive-12many
+- texlive-12many
+
