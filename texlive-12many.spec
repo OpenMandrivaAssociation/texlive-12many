@@ -6,7 +6,7 @@
 # catalog-version 0.3
 Name:		texlive-12many
 Version:	0.3
-Release:	6
+Release:	7
 Summary:	Generalising mathematical index sets
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/12many
