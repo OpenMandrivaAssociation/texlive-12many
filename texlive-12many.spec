@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/12many
-# catalog-date 2008-10-03 01:00:01 +0200
-# catalog-license lppl
-# catalog-version 0.3
 Name:		texlive-12many
-Version:	0.3
-Release:	12
+Version:	15878
+Release:	1
 Summary:	Generalising mathematical index sets
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/12many
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ package provides an interface that makes changing from one to
 another a one-line change.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,31 +41,11 @@ another a one-line change.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -q -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Sun Feb 12 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3-3
-+ Revision: 773385
-- Rebuild
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3-2
-+ Revision: 749032
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.3-1
-+ Revision: 717775
-- texlive-12many
-- texlive-12many
-- texlive-12many
-- texlive-12many
-- texlive-12many
-- texlive-12many
-- texlive-12many
-
