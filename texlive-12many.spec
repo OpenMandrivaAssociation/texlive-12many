@@ -1,6 +1,6 @@
 Name:		texlive-12many
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Generalising mathematical index sets
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/12many
