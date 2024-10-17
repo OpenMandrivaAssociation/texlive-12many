@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Generalising mathematical index sets
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/12many
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/12many
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/12many.doc.r%{version}.tar.xz
